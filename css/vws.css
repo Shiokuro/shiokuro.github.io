@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    max-width: 90%;
+    min-width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(2, 1fr);
+    margin-top: 4em;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.space{
+    width:200px;
+}
+.menu{
+    width: 100%;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mscPlayer{
+    grid-column: 5/7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-end;
+    gap: 1em;
+    font-size: 1.5em;
+    max-width: 100%;
+    color: white;
+}
+.mscItem{
+    position: relative;
+    top: 15%;
+}
+#mscPrev::before{
+    content: url(../img/radio.svg);
+}
+.logo{
+    width: 10em;
+}
+#pagepiling{
+    z-index: 2;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+}
+.arrows{
+    color: white;
+    font-size: 2em;
+    bottom: 5px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.upperArrow{
+    position: relative;
+    top: 0.8em;
+}
+#page1{
+    background-image: url(../img/background.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#page2{
+    background-color:#0E0912;
+    background-image: url(../img/tv-overlay.png), url(../img/tv-static.png);
+    background-size: cover, cover;
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+}
+#page2Inner{
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+}
+.leftSide{
+    height:100%;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.rightSide{
+    height:100%;
+    width:70%;
+    color: white;
+    text-align: center;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+h1, p{
+    color: white;
+    text-align: left;
+}
+h1{
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 16px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#page3{
+    background-image: url(../img/pekora.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#page4{
+    background-image: url(../img/okayu.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#page5{
+    background-image: url(../img/fubuki.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.btn{
+    font-size: 1.5em;
+    padding: 0.2em;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
