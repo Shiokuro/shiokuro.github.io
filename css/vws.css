@@ -71,14 +71,14 @@ header{
     position: relative;
     top: 0.8em;
 }
-#page1{
+#mainPage{
     background-image: url(../img/background.gif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#page2{
+#subPageBg{
     background-color:#0E0912;
     background-image: url(../img/tv-overlay.png), url(../img/tv-static.png);
     background-size: cover, cover;
