@@ -86,7 +86,7 @@ header{
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
 }
-#page2Inner{
+#subPages{
     height:100%;
     display:grid;
     grid-template-columns: 1fr 1fr;
