@@ -47,7 +47,7 @@ header{
 #mscPrev::before{
     content: url(../img/radio.svg);
 }
-.logo{
+.logo, .mobileLogo{
     width: 10em;
 }
 #pagepiling{
@@ -57,8 +57,6 @@ header{
     height: 100vh;
 }
 .arrows{
-    color: white;
-    font-size: 2em;
     bottom: 5px;
     position: absolute;
     text-align: center;
@@ -173,4 +171,78 @@ p{
     cursor: pointer;
     color: white;
     text-decoration: underline;
+}
+.mobile{
+    display:none;
+}
+.mobileButtons{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .link{
+        display:none
+    }
+    .logo{
+        display:none
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .mobileButtons{
+        background-color: #717171;
+        min-width:180px;
+        display:inline-block;
+        position: absolute;
+        overflow: auto;
+    }
+    .mobileButtons a{
+        padding: 12px 16px;
+        font-size: 1.5em;
+        display: block;
+    }
+    .mobileButtons a:hover{
+        background-color: orange;
+    }
+    header{
+        margin: 0;
+        max-width: 100%;
+    }
+    .mobile{
+        display: block;
+        position: relative;
+        background-color: #808080;
+    }
+    #mscTitle{
+        position:absolute;
+        right:0.5em;
+        bottom:1em;
+        font-size: 1.2em;
+        color: white;
+    }
+    .menu{
+        width: 100%;    
+        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .mscPlayer{
+        display: none;
+    }
+    .menuIcon{
+        padding: 14px 16px;
+        position: relative;
+        float:left;
+        display: block;
+        font-size:2em;
+    }
+    .menuIcon:hover{
+        background-color: #717171;
+    }
+    .mobileLogo{
+        display: none;
+    }
+    .noDisplay{
+        display:none
+    }
 }
