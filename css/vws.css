@@ -41,6 +41,7 @@ header{
     color: white;
 }
 .mscMenu{
+    cursor: pointer;
     position: relative;
     top: 15%;
 }
@@ -269,7 +270,7 @@ p{
     .mobileLogo{
         display: none;
     }
-    .noDisplay{
-        display:none
-    }
+}
+.noDisplay{
+    display:none
 }

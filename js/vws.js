@@ -25,3 +25,7 @@ $(".arrows").click(function() {
 $(".menuIcon").click(function(){
   $(".mobileButtons").toggleClass("noDisplay")
 })
+
+$(".mscMenu").click(function(){
+  $(".mscControls").toggleClass("noDisplay")
+})
