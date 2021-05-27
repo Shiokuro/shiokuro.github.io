@@ -47,11 +47,14 @@ header{
 .mscMenu::before{
     content: url(../img/radio.svg);
 }
+.mscIcons{
+    display: flex;
+    justify-content: flex-end;
+}
 .mscControls{
     display: flex;
-    position: absolute;
-    top: 2.2em;
-    right: 25px;
+    position: fixed;
+    top: 120px;
     width: 307px;
     justify-content: space-around;
     border: 5px solid white;
