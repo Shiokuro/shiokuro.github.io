@@ -40,12 +40,36 @@ header{
     max-width: 100%;
     color: white;
 }
-.mscItem{
+.mscMenu{
     position: relative;
     top: 15%;
 }
-#mscPrev::before{
+.mscMenu::before{
     content: url(../img/radio.svg);
+}
+.mscControls{
+    display: flex;
+    position: absolute;
+    top: 2.2em;
+    right: 25px;
+    width: 307px;
+    justify-content: space-around;
+    border: 5px solid white;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    border-radius: 100px;
+    padding-top: 5px;
+}
+.mscPrev::before{
+    content: url(../img/mscPrev.svg)
+}
+.mscPlay::before{
+    content: url(../img/mscPlay.svg)
+}
+.mscNext::before{
+    content: url(../img/mscNext.svg)
+}
+.mscMute:before{
+    content: url(../img/mscMute.svg)
 }
 .logo, .mobileLogo{
     width: 10em;
