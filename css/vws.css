@@ -52,6 +52,9 @@ header{
 .mscMenu::before{
     content: url(../img/radio.svg);
 }
+.mscMenu:active{
+    transform: scale(0.94);
+}
 .mscIcons{
     display: flex;
     justify-content: flex-end;
