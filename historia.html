@@ -23,9 +23,28 @@
                 <img src="img/branco_sem.svg" class="mobileLogo">
                 <span id="mscTitle">id - Floral Shoppe  &#9834;</span>
             </div>
-            <a class="btn link" href="lobby.html">lobby</a> <a class="btn link" href="sobre.html">sobre</a> <a class="btn link" href="historia.html">história</a> <a class="btn link" href="analise.html">análise</a> <a class="btn link" href="artistas.html">artistas</a>
-            <div class=mscPlayer>
-                <span id="mscTitle">id - Floral Shoppe</span> <span id="mscPrev" class="mscItem"></span>
+
+            <a class="btn link" href="lobby.html">lobby</a>
+            <a class="btn link" href="sobre.html">sobre</a> 
+            <a class="btn link" href="historia.html">história</a> 
+            <a class="btn link" href="analise.html">análise</a> 
+            <a class="btn link" href="artistas.html">artistas</a>
+            <div>
+                <div class=mscPlayer>
+                    <span class="mscTitle">id - Floral Shoppe</span> 
+                    <div class="mscIcons">
+                        <span class="mscMenu"></span>
+                        <div class="mscControls noDisplay">
+                            <span class="mscPrev" onclick="prevSong()"></span>
+                            <span class="mscPlay" id="play" onclick="justPlay()"></span>
+                            <span class="mscNext" onclick="nextSong()"></span>
+                            <div id="volHover">
+                                <span class="mscMute" id="mute" onclick="muteSound()"></span>
+                                <input class="mscVol" type="range" min="0" max="100" value="90" onchange="volumeChange()" id="volume">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="dropdown">
