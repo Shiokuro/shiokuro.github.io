@@ -1,62 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/vws.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
-    <script src="js/jquery.pagepiling.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Mono&display=swap');
-        </style>
-</head>
-<body>
-    <header>
-        <div class=menu>
-            <img src="img/branco_sem.svg" class="logo">
-            <div class="mobile">
-                <a class="menuIcon">&#9776;</a>
-                <img src="img/branco_sem.svg" class="mobileLogo">
-                <span id="mscTitle">id - Floral Shoppe  &#9834;</span>
-            </div>
-
-            <a class="btn link" href="lobby.html">lobby</a>
-            <a class="btn link" href="sobre.html">sobre</a> 
-            <a class="btn link" href="historia.html">história</a> 
-            <a class="btn link" href="analise.html">análise</a> 
-            <a class="btn link" href="artistas.html">artistas</a>
-            <div>
-                <div class=mscPlayer>
-                    <span class="mscTitle">id - Floral Shoppe</span> 
-                    <div class="mscIcons">
-                        <span class="mscMenu"></span>
-                        <div class="mscControls noDisplay">
-                            <span class="mscPrev" onclick="prevSong()"></span>
-                            <span class="mscPlay" id="play" onclick="justPlay()"></span>
-                            <span class="mscNext" onclick="nextSong()"></span>
-                            <div id="volHover">
-                                <span class="mscMute" id="mute" onclick="muteSound()"></span>
-                                <input class="mscVol" type="range" min="0" max="100" value="90" onchange="volumeChange()" id="volume">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="dropdown">
-            <div class="mobileButtons noDisplay">
-                <a class="btn linkLobby" href="lobby.html">lobby</a> 
-                <a class="btn linkSobre" href="sobre.html">sobre</a> 
-                <a class="btn linkHistoria" href="historia.html">história</a> 
-                <a class="btn linkAnalise" href="analise.html">análise</a> 
-                <a class="btn linkArtistas" href="artistas.html">artistas</a>
-            </div> 
-        </div>
-    </header>
     <div id="pagepiling">  
         <div class="section" id="sobreVWS">
             <div id="subPages">
@@ -124,6 +65,4 @@
             </div>   
         </div>
     </div>  
-    <script src="js/vws.js"></script>
-</body>
-</html>
+    <script src="js/pagepiling.js"></script>
