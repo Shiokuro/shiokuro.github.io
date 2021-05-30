@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    max-width: 90%;
+    min-width: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1fr;
+    font-family:  'Roboto Mono', monospace;
+    background-image: url("nuvem_bg.jpg");
+    padding: 100px;
+}
+.space{
+    width:200px;
+}
+.menu{
+    width: 100%;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.mscPlayer{
+    grid-column: 5/7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-end;
+    gap: 1em;
+    font-size: 1.5em;
+    max-width: 100%;
+    color: white;
+}
+.mscMenu{
+    cursor: pointer;
+    position: relative;
+    top: 15%;
+}
+.mscMenu::before{
+    content: url(../img/radio.svg);
+}
+.mscIcons{
+    display: flex;
+    justify-content: flex-end;
+}
+.mscControls{
+    display: flex;
+    position: fixed;
+    top: 120px;
+    width: 307px;
+    justify-content: space-around;
+    border: 5px solid white;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    border-radius: 100px;
+    padding-top: 5px;
+}
+.mscPrev::before{
+    content: url(../img/mscPrev.svg)
+}
+.mscPlay::before{
+    content: url(../img/mscPlay.svg)
+}
+.mscNext::before{
+    content: url(../img/mscNext.svg)
+}
+.mscMute:before{
+    content: url(../img/mscMute.svg)
+}
+.logo, .mobileLogo{
+    width: 10em;
+}
+#pagepiling{
+    z-index: 2;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+}
+.arrows{
+    bottom: 5px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.upperArrow{
+    position: relative;
+    top: 0.8em;
+}
+#mainPage{
+    background-image: url(../img/background.gif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#subPageBg, #sobreMain{
+    background-color:#0E0912;
+    background-image: url(../img/tv-overlay.png), url(../img/tv-static.png);
+    background-size: cover, cover;
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+}
+#sobreVWS{
+    background-image: url(../img/bg-about.png);
+    background-size: cover, cover;
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+}
+#subPages{
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+}
+.leftSide{
+    height:100%;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.rightSide{
+    height:100%;
+    width:70%;
+    color: white;
+    text-align: center;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+.about{
+    height:110%;
+    width:120%;
+    color: white;
+    text-align: center;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    margin-left: 100px;
+    line-height: 2;
+}
+h1, p{
+    color: white;
+    text-align: left;
+}
+h1{
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 31px;
+}
+#page3{
+    background-image: url(../img/pekora.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#page4{
+    background-image: url(../img/okayu.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#page5{
+    background-image: url(../img/fubuki.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.btn{
+    font-size: 1.5em;
+    padding: 0.2em;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+.mobile{
+    display:none;
+}
+.mobileButtons{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .link{
+        display:none
+    }
+    .logo{
+        display:none
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .mobileButtons{
+        background-color: #717171;
+        min-width:180px;
+        display:inline-block;
+        position: absolute;
+        overflow: auto;
+    }
+    .mobileButtons a{
+        padding: 12px 16px;
+        font-size: 1.5em;
+        display: block;
+    }
+    .mobileButtons a:hover{
+        background-color: orange;
+    }
+    .mobile{
+        display: block;
+        position: relative;
+        background-color: #808080;
+    }
+    #mscTitle{
+        position:absolute;
+        right:0.5em;
+        bottom:1em;
+        font-size: 1.2em;
+        color: white;
+    }
+    .menu{
+        width: 100%;    
+        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .mscPlayer{
+        display: none;
+    }
+    .menuIcon{
+        padding: 14px 16px;
+        position: relative;
+        float:left;
+        display: block;
+        font-size:2em;
+    }
+    .menuIcon:hover{
+        background-color: #717171;
+    }
+    .mobileLogo{
+        display: none;
+    }
+}
+.noDisplay{
+    display:none
+}
+.artBg{
+    display: table;
+    width: 100%;
+    height: 4.6875rem;
+}
+
+/* CSS Art Page*/
+h1, h2, h3{
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    z-index: -1;
+}
+h1{
+    font-size: 48px;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.artpageClara{
+    background-color: #717171;
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+    grid-gap: 80px;
+
+}
+.artpageEscura{
+    background-color: #0E0E0E;
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+    grid-gap: 80px;
+}
+#cabecinha{
+    background: url(../img/nuvem_bg.jpg);
+    padding: 125px;
+    max-width: 90%;
+    min-width: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1fr;
+    font-family:  'Roboto Mono', monospace;
+    margin: 0;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.iconColumn{
+    float: left;
+    padding: 20px;
+}
+.artImg{
+    min-height: 15%;
+    max-height: 15%;
+    min-width: 15%;
+    max-width: 15%;
+    display: block;
+}
