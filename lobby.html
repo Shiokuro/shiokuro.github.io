@@ -24,22 +24,22 @@
                 <span id="mscTitle">id - Floral Shoppe  &#9834;</span>
             </div>
 
-            <a class="btn link" onclick="loadDoc('lobbyBody')">lobby</a>
-            <a class="btn link" onclick="loadDoc('sobre')">sobre</a> 
-            <a class="btn link" onclick="loadDoc('historia')">história</a> 
-            <a class="btn link" onclick="loadDoc('analise')">análise</a> 
-            <a class="btn link" onclick="loadDoc('artista')">artistas</a>
+            <a class="colorBtn btn link" onclick="loadDoc('lobbyBody')">lobby</a>
+            <a class="colorBtn btn link" onclick="loadDoc('sobre')">sobre</a> 
+            <a class="colorBtn btn link" onclick="loadDoc('historia')">história</a> 
+            <a class="colorBtn btn link" onclick="loadDoc('analise')">análise</a> 
+            <a class="colorBtn btn link" onclick="loadDoc('artista')">artistas</a>
             <div>
                 <div class=mscPlayer>
                     <span class="mscTitle">id - Floral Shoppe</span> 
                     <div class="mscIcons">
                         <span class="mscMenu"></span>
                         <div class="mscControls noDisplay">
-                            <span class="mscPrev" onclick="prevSong()"></span>
-                            <span class="mscPlay" id="play" onclick="justPlay()"></span>
-                            <span class="mscNext" onclick="nextSong()"></span>
+                            <span class="colorBtn mscPrev" onclick="prevSong()"></span>
+                            <span class="colorBtn mscPlay" id="play" onclick="justPlay()"></span>
+                            <span class="colorBtn mscNext" onclick="nextSong()"></span>
                             <div id="volHover">
-                                <span class="mscMute" id="mute" onclick="muteSound()"></span>
+                                <span class="colorBtn mscMute" id="mute" onclick="muteSound()"></span>
                                 <input class="mscVol" type="range" min="0" max="100" value="90" onchange="volumeChange()" id="volume">
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                 <div class="rightSide">
                     <h1>SOBRE</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla malesuada viverra vitae facilisis. Phasellus amet sagittis in aliquet diam ac. Velit suspendisse sit risus a, pharetra. Tellus fames sollicitudin proin scelerisque. Velit lorem ornare.</p>
-                    <a class="btn linkSobre" onclick="loadDoc('sobre')"><img src="img/button-abt.svg"></a>
+                    <button type="button" class="readMore linkSobre" onclick="loadDoc('sobre')">leia mais</button>
                 </div>
             </div>
             <div class="arrows">               
@@ -83,7 +83,7 @@
                 <div class="rightSide">
                     <h1>HISTÓRIA</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla malesuada viverra vitae facilisis. Phasellus amet sagittis in aliquet diam ac. Velit suspendisse sit risus a, pharetra. Tellus fames sollicitudin proin scelerisque. Velit lorem ornare.</p>
-                    <a class="btn linkHistoria" onclick="loadDoc('historia')"><img src="img/button-abt.svg"></a>
+                    <button type="button" class="readMore linkHistoria" onclick="loadDoc('historia')">leia mais</button>
                 </div>
             </div>
             <div class="arrows">                
@@ -96,7 +96,7 @@
                 <div class="rightSide">
                     <h1>ANÁLISE</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla malesuada viverra vitae facilisis. Phasellus amet sagittis in aliquet diam ac. Velit suspendisse sit risus a, pharetra. Tellus fames sollicitudin proin scelerisque. Velit lorem ornare.</p>
-                    <a class="btn linkAnalise" onclick="loadDoc('analise')"><img src="img/button-abt.svg"></a>
+                    <button type="button" class="readMore linkAnalise" onclick="loadDoc('analise')">leia mais</button>
                 </div>
             </div>
             <div class="arrows">                
@@ -109,7 +109,7 @@
                 <div class="rightSide">
                     <h1>ARTISTAS</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla malesuada viverra vitae facilisis. Phasellus amet sagittis in aliquet diam ac. Velit suspendisse sit risus a, pharetra. Tellus fames sollicitudin proin scelerisque. Velit lorem ornare.</p>
-                    <a class="btn linkArtistas" onclick="loadDoc('artistas')"><img src="img/button-abt.svg"></a>
+                    <button type="button" class="readMore linkArtistas" onclick="loadDoc('artistas')">leia mais</button>
                 </div>
             </div>
         </div>

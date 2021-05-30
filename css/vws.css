@@ -155,7 +155,7 @@ input[type="range"]::-webkit-slider-thumb{
 }
 #subPageBg, #sobreMain{
     background-color:#0E0912;
-    background-image: url(../img/tv-overlay.png), url(../img/tv-static.png);
+    background-image: url(../img/tv-overlay.png), url(../img/bg.png);
     background-size: cover, cover;
     background-position: center center, center center;
     background-repeat: no-repeat, no-repeat;
@@ -252,6 +252,26 @@ p{
     color: white;
     text-decoration: underline;
 }
+.readMore{
+    width: 112px;
+    height: 40px;
+    border: none;
+    border-radius: 18px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Mono';
+    text-decoration: none;
+}
+.readMore:hover{
+    background: #F71CA4;
+}
+.readMore:active{
+    background: #CC228C;
+    box-shadow: 0px 4px 5px 0px #00000040 inset;
+}
+.colorBtn:hover{
+    color: #B50572;
+}
 .mobile{
     display:none;
 }
@@ -282,7 +302,7 @@ p{
         display: block;
     }
     .mobileButtons a:hover{
-        background-color: orange;
+        background-color: #B50572;
     }
     header{
         margin: 0;
