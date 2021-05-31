@@ -17,8 +17,17 @@ if (screen && screen.width > 768) {
         });
       });
     }
+if (screen && screen.width < 768) {
+  $( document ).ready(function(){
+    $.fn.pagepiling.setAllowScrolling(false, "down, up");
+  })
+}
   
   $(".arrows").click(function() {
+    $.fn.pagepiling.moveSectionDown();
+  })
+
+  $(".arrowMobile").click(function() {
     $.fn.pagepiling.moveSectionDown();
   })
 

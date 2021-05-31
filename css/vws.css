@@ -310,6 +310,10 @@ p{
     .mobileButtons a:hover{
         background-color: #B50572;
     }
+    .about{
+        width: 70%;
+        margin-left: -60px;
+    }
     header{
         margin: 0;
         max-width: 100%;
