@@ -12,6 +12,7 @@ let prev = document.querySelector(".mscPrev");
 let play = document.querySelector(".mscPlay");
 let next = document.querySelector(".mscNext");
 let title = document.querySelector(".mscTitle");
+let title2 = document.querySelector("#mscTitle");
 let showDuration = document.querySelector(".duration");
 let recentVol = document.querySelector("#volume");
 
@@ -85,6 +86,7 @@ let songList = [
 function loadTrack(indexNo){
   track.src = songList[indexNo].path;
   title.innerHTML = " &#9834; " +songList[indexNo].name;
+  title2.innerHTML = " &#9834; " +songList[indexNo].name;
   track.load();
 }
 loadTrack(indexNo);
