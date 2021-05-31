@@ -52,5 +52,6 @@ if (screen && screen.width > 768) {
     xhttp.open("GET", pageName + ".html", true);
     xhttp.send();
 
-    $.getScript('js/pagepiling.js')
+    {$.getScript('js/pagepiling.js')
+  }
   }
