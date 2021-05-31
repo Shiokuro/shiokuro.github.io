@@ -278,12 +278,18 @@ p{
 .mobileButtons{
     display: none;
 }
+.arrowMobile{
+    display:none;
+}
 @media only screen and (max-width: 768px) {
     .link{
         display:none
     }
     .logo{
         display:none
+    }
+    .arrows{
+        display:none;
     }
     .dropdown {
         position: relative;
@@ -313,6 +319,12 @@ p{
         display: block;
         position: relative;
         background-color: #808080;
+    }
+    .arrowMobile{
+        display: block;
+        right: -5px;
+        top: 50%;
+        position: absolute;
     }
     #mscTitle{
         position:absolute;
@@ -362,7 +374,6 @@ p{
         display: none;
     }
     #subPages{
-        margin-top: 72px;
         grid-template-columns: none;
         place-items: center;
         gap:0;
