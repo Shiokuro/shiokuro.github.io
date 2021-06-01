@@ -375,8 +375,9 @@ p{
         width: 100%;
         justify-content: center;
         background: #808080;
-        align-items: center;
+        align-items: flex-end;
         gap: max(15vw, 50px);
+        padding: 0;
     }
     .menuIcon{
         padding: 14px 16px;
