@@ -157,7 +157,7 @@ track.addEventListener("ended", function(){
 });
 
 function artistsPage(){
-  $('header').attr('id','cabecinha');
+  $('header').attr('id','artHeader');
 }
 
 function notArtistsPage(){
