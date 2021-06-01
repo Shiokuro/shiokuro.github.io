@@ -31,6 +31,10 @@ if (screen && screen.width < 768) {
     $.fn.pagepiling.moveSectionDown();
   })
 
+  $(".arrowBackMobile").click(function() {
+    $.fn.pagepiling.moveSectionUp();
+  })
+
   $( ".lobby" ).on('click', function() {
     $( "#body" ).load( "lobbyBody.html" );
   });
