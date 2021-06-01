@@ -60,6 +60,6 @@ if (screen && screen.width < 768) {
     };
     xhttp.open("GET", pageName + ".html", true);
     xhttp.send();
-    
-    delay(200).$.getScript('js/pagepiling.js')
+
+    setTimeout($.getScript('js/pagepiling.js'), 300);
   }
