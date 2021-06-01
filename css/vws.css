@@ -394,6 +394,7 @@ p{
     }
     #subPages{
         height: 83.7vh;
+        padding-top: 1px;
         overflow: scroll;
         grid-template-columns: none;
         place-items: center;
