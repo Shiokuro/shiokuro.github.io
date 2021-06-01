@@ -156,3 +156,10 @@ track.addEventListener("ended", function(){
   playSong();
 });
 
+function artistsPage(){
+  $('header').attr('id','cabecinha');
+}
+
+function notArtistsPage(){
+  $('header').removeAttr('id');
+}
