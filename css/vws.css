@@ -303,7 +303,7 @@ p{
     }
     .headerBehind{
         display: block;
-        height: 72px;
+        height: 11vh;
         margin: unset;
     }
     .footerBehind{
@@ -380,11 +380,14 @@ p{
         padding: 0;
     }
     .menuIcon{
-        padding: 14px 16px;
+        display: flex;
+        height: 11vh;
+        font-size: 5vh;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
         position: relative;
         float:left;
-        display: block;
-        font-size:2em;
     }
     .menuIcon:hover{
         background-color: #717171;
@@ -393,8 +396,7 @@ p{
         display: none;
     }
     #subPages{
-        height: 83.7vh;
-        padding-top: 1px;
+        height: 84vh;
         overflow: scroll;
         grid-template-columns: none;
         place-items: center;
