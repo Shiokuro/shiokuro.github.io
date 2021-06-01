@@ -278,12 +278,18 @@ p{
 .mobileButtons{
     display: none;
 }
+.arrowMobile{
+    display:none;
+}
 @media only screen and (max-width: 768px) {
     .link{
         display:none
     }
     .logo{
         display:none
+    }
+    .arrows{
+        display:none;
     }
     .dropdown {
         position: relative;
@@ -304,6 +310,10 @@ p{
     .mobileButtons a:hover{
         background-color: #B50572;
     }
+    .about{
+        width: 70%;
+        margin-left: -60px;
+    }
     header{
         margin: 0;
         max-width: 100%;
@@ -313,6 +323,12 @@ p{
         display: block;
         position: relative;
         background-color: #808080;
+    }
+    .arrowMobile{
+        display: block;
+        right: -5px;
+        top: 50%;
+        position: absolute;
     }
     #mscTitle{
         position:absolute;
@@ -332,6 +348,22 @@ p{
     .mscPlayer{
         display: none;
     }
+    .mscControls {
+        top: unset;
+        border: unset;
+        box-shadow: unset;
+        border-radius: unset;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        height: max(4.5vh, 36px);
+        width: 100%;
+        justify-content: center;
+        background: #808080;
+        padding-top: 5px;
+        align-items: center;
+        gap: max(15vw, 50px);
+    }
     .menuIcon{
         padding: 14px 16px;
         position: relative;
@@ -344,6 +376,33 @@ p{
     }
     .mobileLogo{
         display: none;
+    }
+    #subPages{
+        grid-template-columns: none;
+        place-items: center;
+        gap:0;
+    }
+    .leftSide{
+        grid-column: unset;
+        grid-row: 1/2;
+        justify-content: flex-end;
+    }
+    .leftSideImage{
+        width: min(50vw, 35vh);
+    }
+    .rightSide{
+        grid-column: unset;
+        grid-row: 2/3;
+        width: 75vw;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    h1{
+        font-size: min(10vw, 6vh);
+    }
+    p{
+        font-size: min(4.5vw, 2vh);
+        line-height: min(5vw, 2.5vh);
     }
 }
 .noDisplay{
