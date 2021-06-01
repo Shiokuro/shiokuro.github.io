@@ -279,7 +279,10 @@ p{
     display: none;
 }
 .arrowMobile{
-    display:none;
+    display: none;
+}
+.arrowBackMobile{
+    display: none;
 }
 .headerBehind{
     display: none;
@@ -341,8 +344,16 @@ p{
         background-color: #808080;
     }
     .arrowMobile{
+        width: 15vw;
         display: block;
         right: -5px;
+        top: 50%;
+        position: absolute;
+    }
+    .arrowBackMobile{
+        width: 15vw;
+        display: block;
+        left: -5px;
         top: 50%;
         position: absolute;
     }
