@@ -22,7 +22,7 @@ if (screen && screen.width < 768) {
     $.fn.pagepiling.setAllowScrolling(false, "down, up");
   })
 }
-  
+
   $(".arrows").click(function() {
     $.fn.pagepiling.moveSectionDown();
   })
@@ -61,6 +61,5 @@ if (screen && screen.width < 768) {
     xhttp.open("GET", pageName + ".html", true);
     xhttp.send();
 
-    {$.getScript('js/pagepiling.js')
-  }
+    setTimeout($.getScript('js/pagepiling.js'), 300);
   }
