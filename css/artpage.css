@@ -1,7 +1,6 @@
 #artHeader{
-    position: absolute;
     background-image: url(../img/nuvem_bg.jpg);
-    padding: 150px;
+    padding: 105px;
     max-width: 90%;
     min-width: 80%;
     left: 0;
@@ -79,7 +78,6 @@ h2{
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
-    top: 300px;
 }
 .artpageEscura{
     background-color: #0E0E0E;
@@ -90,5 +88,4 @@ h2{
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
-    top: 300px;
 }
