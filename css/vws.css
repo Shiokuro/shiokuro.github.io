@@ -281,6 +281,12 @@ p{
 .arrowMobile{
     display:none;
 }
+.headerBehind{
+    display: none;
+}
+.footerBehind{
+    display: none;
+}
 @media only screen and (max-width: 768px) {
     .link{
         display:none
@@ -294,6 +300,15 @@ p{
     .dropdown {
         position: relative;
         display: inline-block;
+    }
+    .headerBehind{
+        display: block;
+        height: 72px;
+        margin: unset;
+    }
+    .footerBehind{
+        display: block;
+        height: 5vh;
     }
     .mobileButtons{
         background-color: #717171;
@@ -356,11 +371,10 @@ p{
         display: flex;
         position: fixed;
         bottom: 0;
-        height: max(4.5vh, 36px);
+        height: 5vh;
         width: 100%;
         justify-content: center;
         background: #808080;
-        padding-top: 5px;
         align-items: center;
         gap: max(15vw, 50px);
     }
@@ -378,9 +392,11 @@ p{
         display: none;
     }
     #subPages{
+        height: 83.7vh;
+        overflow: scroll;
         grid-template-columns: none;
         place-items: center;
-        gap:0;
+        gap: 0;
     }
     .leftSide{
         grid-column: unset;
