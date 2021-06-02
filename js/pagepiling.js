@@ -68,7 +68,7 @@ if (screen && screen.width < 768) {
     $('#corpo').removeClass('scroll');
     $('header').removeClass('posAbsolute');
 
-    setTimeout($.getScript('js/pagepiling.js'), 300);
+    success:$.getScript('js/pagepiling.js');
   }
 
   function loadDocNoPP(pageName) {
@@ -84,5 +84,4 @@ if (screen && screen.width < 768) {
     $('#corpo').addClass('scroll');
     $('header').addClass('posAbsolute');
 
-    setTimeout($.getScript('js/pagepiling.js'), 300);
   }

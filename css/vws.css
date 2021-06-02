@@ -185,6 +185,9 @@ input[type="range"]::-webkit-slider-thumb{
 .leftSideImage{
     width:22vw;
 }
+.leftSideImage2{
+    width:28vw;
+}
 .rightSide{
     height:100%;
     width:38vw;
@@ -420,6 +423,9 @@ p{
         justify-content: flex-end;
     }
     .leftSideImage{
+        width: min(50vw, 35vh);
+    }
+    .leftSideImage2{
         width: min(50vw, 35vh);
     }
     .rightSide{
