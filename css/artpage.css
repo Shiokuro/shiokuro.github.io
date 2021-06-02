@@ -73,23 +73,23 @@ h2{
     background-color: #5B16BF;
     display: flex;
     align-items: center;
-    padding-left: 198px;
-    grid-gap: 121px;
+    padding-left: min(198px, 12vw);
+    grid-gap: min(121px,7vw);
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
-    height: 18.5vw;
+    height: max(18.5vw, 290px);
 }
 .artpageEscura{
     background-color: #0E0E0E;
     display: flex;
     align-items: center;
-    padding-left: 198px;
-    grid-gap: 121px;
+    padding-left: min(198px, 12vw);
+    grid-gap: min(121px,7vw);
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
-    height: 18.5vw;
+    height: max(18.5vw, 290px);
 }
 .artPicture{
     width: max(17vw, 300px);
