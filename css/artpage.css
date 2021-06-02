@@ -48,7 +48,7 @@
     font-weight: 600;
     position: absolute;
     left: 182px;
-    top: 250px;
+    top: 167px;
     color: white;
     z-index: 100;
     letter-spacing: 15px;
@@ -78,6 +78,7 @@ h2{
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
+    height: 18.5vw;
 }
 .artpageEscura{
     background-color: #0E0E0E;
@@ -88,4 +89,13 @@ h2{
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
+    height: 18.5vw;
+}
+.artPicture{
+    width: max(17vw, 300px);
+}
+iframe{
+    border: 0;
+    width: min(42vw, 570px);
+    height: 120px;
 }

@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/vws.css">
+    <link rel="stylesheet" type="text/css" href="css/artpage.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
     <script src="js/jquery.pagepiling.js"></script>
     <style>
@@ -24,7 +25,7 @@
                 <span id="mscTitle">id - Floral Shoppe  &#9834;</span>
                 <div class="mscControls">
                     <span class="colorBtn mscPrev" onclick="prevSong()"></span>
-                    <span class="colorBtn mscPlay" id="play" onclick="justPlay()"></span>
+                    <span class="colorBtn mscPlay play" onclick="justPlay()"></span>
                     <span class="colorBtn mscNext" onclick="nextSong()"></span>
                 </div>
             </div>
@@ -33,15 +34,15 @@
             <a class="colorBtn btn link" onlick="notArtistsPage()" onclick="loadDoc('sobre')">sobre</a> 
             <a class="colorBtn btn link" onlick="notArtistsPage()" onclick="loadDoc('historia')">história</a> 
             <a class="colorBtn btn link" onlick="notArtistsPage()" onclick="loadDoc('analise')">análise</a> 
-            <a class="colorBtn btn link" onlick="artistsPage()" onclick="loadDoc('artistas')">artistas</a>
+            <a class="colorBtn btn link" onlick="artistsPage()" onclick="loadDocNoPP('artistas')">artistas</a>
             <div>
                 <div class=mscPlayer>
                     <span class="mscTitle">id - Floral Shoppe</span> 
                     <div class="mscIcons">
                         <span class="mscMenu"></span>
-                        <div class="mscControls noDisplay">
+                        <div id="pcControls" class="mscControls noDisplay">
                             <span class="colorBtn mscPrev" onclick="prevSong()"></span>
-                            <span class="colorBtn mscPlay" id="play" onclick="justPlay()"></span>
+                            <span class="colorBtn mscPlay play" onclick="justPlay()"></span>
                             <span class="colorBtn mscNext" onclick="nextSong()"></span>
                             <div id="volHover">
                                 <span class="colorBtn mscMute" id="mute" onclick="muteSound()"></span>
@@ -58,7 +59,7 @@
                 <a class="btn linkSobre" onlick="notArtistsPage()" onclick="loadDoc('sobre')">sobre</a> 
                 <a class="btn linkHistoria" onlick="notArtistsPage()" onclick="loadDoc('historia')">história</a> 
                 <a class="btn linkAnalise" onlick="notArtistsPage()" onclick="loadDoc('analise')">análise</a> 
-                <a class="btn linkArtistas" onlick="artistsPage()" onclick="loadDoc('artistas')">artistas</a>
+                <a class="btn linkArtistas" onlick="artistsPage()" onclick="loadDocNoPP('artistas')">artistas</a>
             </div> 
         </div>
     </header>

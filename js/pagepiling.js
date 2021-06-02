@@ -65,5 +65,24 @@ if (screen && screen.width < 768) {
     xhttp.open("GET", pageName + ".html", true);
     xhttp.send();
 
+    $('#corpo').removeClass('scroll');
+    $('header').removeClass('posAbsolute');
+
+    setTimeout($.getScript('js/pagepiling.js'), 300);
+  }
+
+  function loadDocNoPP(pageName) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       document.getElementById("body").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", pageName + ".html", true);
+    xhttp.send();
+
+    $('#corpo').addClass('scroll');
+    $('header').addClass('posAbsolute');
+
     setTimeout($.getScript('js/pagepiling.js'), 300);
   }

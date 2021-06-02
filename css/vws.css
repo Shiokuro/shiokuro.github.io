@@ -438,6 +438,12 @@ p{
     }
 }
 .noDisplay{
-    display:none !important;
+    display: none !important;
     visibility: hidden;
+}
+.scroll{
+    overflow: scroll !important;
+}
+.posAbsolute{
+    position: absolute !important;
 }

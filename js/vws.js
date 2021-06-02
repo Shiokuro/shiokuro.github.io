@@ -3,7 +3,7 @@ $(".menuIcon").click(function(){
 })
 
 $(".mscMenu").click(function(){
-  $(".mscControls").toggleClass("noDisplay")
+  $("#pcControls").toggleClass("noDisplay")
 })
 
 //Music Player
@@ -103,13 +103,13 @@ function justPlay(){
 function playSong(){
   track.play();
   playingSong = true;
-  $('#play').removeClass('mscPlay').addClass('mscPause');
+  $('.play').removeClass('mscPlay').addClass('mscPause');
 }
 
 function pauseSong(){
   track.pause()
   playingSong = false;
-  $('#play').removeClass('mscPause').addClass('mscPlay');
+  $('.play').removeClass('mscPause').addClass('mscPlay');
 }
 
 function nextSong(){
