@@ -26,20 +26,20 @@ let track = document.createElement("audio");
 
 let songList = [
   {
-    name: "Confession Of Plagiarist",
-    path: "./songs/01.wav"
+    name: "tickles",
+    path: "./songs/01 - tickles.wav"
   },
   {
-    name: "Daytime Thief",
-    path: "./songs/02.wav"
+    name: "hihi",
+    path: "./songs/02 - hihi.wav"
   },  
   {
-    name: "Prostitution ",
-    path: "./songs/give me a ride.wav"
+    name: "ride",
+    path: "./songs/03 - ride.wav"
   },  
   {
-    name: "Compulsive Bomber",
-    path: "./songs/white.wav"
+    name: "white",
+    path: "./songs/04 - white.wav"
   },
 ];
 
