@@ -394,7 +394,7 @@ p{
         height: 5vh;
         width: 100%;
         justify-content: center;
-        background: #808080;
+        background-color: #808080;
         align-items: flex-end;
         gap: max(15vw, 50px);
         padding: 0;
