@@ -346,7 +346,8 @@ p{
     }
     .mobile{
         display: block;
-        position: relative;
+        width: 100%;
+        position: fixed;
         background-color: #808080;
     }
     .arrowMobile{
