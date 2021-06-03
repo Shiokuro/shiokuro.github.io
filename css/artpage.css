@@ -131,6 +131,10 @@ iframe{
         display: grid;
     }
     .embediconsMbl{
-        display: grid;
+        display: flex;
+        height: 100%;
+    }
+    .upperSection{
+        display: none;
     }
 }
