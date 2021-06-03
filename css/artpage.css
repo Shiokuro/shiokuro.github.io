@@ -34,7 +34,7 @@
     align-items: center;
     height: 320px;
 }
-.artIcons{
+.upperartIcons{
     display: flex;
     align-items: center;
     width: 80%;
@@ -192,5 +192,8 @@ iframe{
     .lb{
         display: grid;
         grid-gap: 0px;
+    }
+    .upperartIcons{
+        display: none;
     }
 }
