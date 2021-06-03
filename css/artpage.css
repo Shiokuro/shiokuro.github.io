@@ -118,8 +118,8 @@ iframe{
     display: grid;
 }
 @media only screen and (max-width: 768px){
-    .artpageEscura{
-        background-color: #0E0E0E;
+    .artpageClara{
+        background-color: #5B16BF;
         display: grid;
         padding-left: min(198px, 12vw);
         padding-top: 50px;
@@ -128,8 +128,8 @@ iframe{
         position: relative;
         height: max(18.5vw, 190px);
     }
-    .artpageClara{
-        background-color: #5B16BF;
+    .artpageEscura{
+        background-color: #0E0E0E;
         display: grid;
         padding-left: min(198px, 12vw);
         padding-top: 50px;
