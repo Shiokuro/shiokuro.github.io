@@ -22,8 +22,9 @@
     position: absolute;
 }
 .artInfo{
-    grid-gap: 10px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     height: 320px;
     width: 570px;
 }
@@ -90,7 +91,7 @@ h2{
     height: max(18.5vw, 290px);
 }
 .artPicture{
-    width: max(17vw, 300px);
+    width: max(17vw, 320px);
 }
 iframe{
     border: 0;
@@ -101,6 +102,19 @@ iframe{
     display: none;
 }
 .embediconsMbl{
+    display: none;
+}
+.upperSection{
+    display: flex;
+    grid-gap: 120px;
+}
+.bottomSection{
+    display: none;
+}
+.embed{
+    display: none;
+}
+.icon{
     display: none;
 }
 @media only screen and (max-width: 768px){
@@ -114,11 +128,6 @@ iframe{
     #artHeader{
         padding: 60px;
     }
-    .artpageEscura{
-        padding-left: 10px;
-        grid-gap: 10px;
-        height: 100px;
-    }
     .artPicture{
         width: 160px;
     }
@@ -131,6 +140,19 @@ iframe{
         display: grid;
     }
     .embediconsMbl{
-        display: grid;
+        display: flex;
+        height: 100%;
+    }
+    .upperSection{
+        display: none;
+    }
+    .bottomSection{
+        display: none;
+    }
+    .embed{
+        display: none;
+    }
+    .icon{
+        display: none;
     }
 }
