@@ -190,7 +190,7 @@ iframe{
     }
     .lb{
         display: grid;
-        grid-gap: 0px;
+        grid-gap: 5px;
     }
     .upperartIcons{
         display: none;
