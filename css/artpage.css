@@ -22,8 +22,9 @@
     position: absolute;
 }
 .artInfo{
-    grid-gap: 10px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     height: 320px;
     width: 570px;
 }
@@ -89,8 +90,11 @@ h2{
     position: relative;
     height: max(18.5vw, 290px);
 }
+.artpageescuraMbl{
+    display: none;
+}
 .artPicture{
-    width: max(17vw, 300px);
+    width: max(17vw, 320px);
 }
 iframe{
     border: 0;
@@ -103,6 +107,14 @@ iframe{
 .embediconsMbl{
     display: none;
 }
+.upperSection{
+    display: flex;
+    grid-gap: 120px;
+}
+.bottomSection{
+    display: none;
+}
+
 @media only screen and (max-width: 768px){
     .artistasTitle{
         font-size: 36px;
@@ -115,6 +127,9 @@ iframe{
         padding: 60px;
     }
     .artpageEscura{
+        display: none;
+    }
+    .artpageescuraMbl{
         padding-left: 10px;
         grid-gap: 10px;
         height: 100px;
@@ -135,6 +150,9 @@ iframe{
         height: 100%;
     }
     .upperSection{
+        display: none;
+    }
+    .bottomSection{
         display: none;
     }
 }
