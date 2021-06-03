@@ -111,7 +111,7 @@ iframe{
         letter-spacing: 5px;
         display: flex;
     }
-    .artHeader{
+    #artHeader{
         padding: 60px;
     }
     .artpageEscura{
