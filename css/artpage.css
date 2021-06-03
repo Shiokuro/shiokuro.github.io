@@ -128,6 +128,16 @@ iframe{
         position: relative;
         height: max(18.5vw, 190px);
     }
+    .artpageClara{
+        background-color: #5B16BF;
+        display: grid;
+        padding-left: min(198px, 12vw);
+        padding-top: 50px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        position: relative;
+        height: max(18.5vw, 190px);
+    }
     .iconColumn{
         float: left;
         padding: 5px;
@@ -169,6 +179,7 @@ iframe{
         flex-direction: column;
         display: flex;
         position: absolute;
+        left: 10px;
         width: 100%;
         align-items: center;
         top: 190px;
