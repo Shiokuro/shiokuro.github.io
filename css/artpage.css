@@ -67,6 +67,7 @@ h2{
 .iconColumn{
     float: left;
     padding: 20px;
+    width: 100%;
 }
 .artpageClara{
     background-color: #5B16BF;
@@ -118,6 +119,21 @@ iframe{
     display: grid;
 }
 @media only screen and (max-width: 768px){
+    .artpageEscura{
+        background-color: #0E0E0E;
+        display: grid;
+        padding-left: min(198px, 12vw);
+        padding-top: 50px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        position: relative;
+        height: max(18.5vw, 190px);
+    }
+    .iconColumn{
+        float: left;
+        padding: 5px;
+        width: 100%;
+    }
     .artistasTitle{
         font-size: 36px;
         left: 25px;
@@ -133,9 +149,9 @@ iframe{
         height: 120px;
     }
     h2{
-    font-size: 24px;
-    letter-spacing: 5px;
-    width: 10px;
+        font-size: 24px;
+        letter-spacing: 5px;
+        width: 10px;
     }
     .nometagfotoMbl{
         display: grid;
@@ -147,15 +163,31 @@ iframe{
     .upperSection{
         display: flex;
         grid-gap: 15px;
+        width: 100%;
     }
     .bottomSection{
-        display: none;
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        align-items: center;
+        top: 190px;
     }
     .embed{
         display: none;
     }
     .icon{
         display: none;
+    }
+    .artIcons{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        top: 35px;
+        left: 15px;
+        flex-direction: row;
+        position: absolute;
+        cursor: pointer;
     }
 
 }
