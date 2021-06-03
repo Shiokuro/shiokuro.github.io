@@ -90,9 +90,6 @@ h2{
     position: relative;
     height: max(18.5vw, 290px);
 }
-.artpageescuraMbl{
-    display: none;
-}
 .artPicture{
     width: max(17vw, 320px);
 }
@@ -114,7 +111,12 @@ iframe{
 .bottomSection{
     display: none;
 }
-
+.embed{
+    display: none;
+}
+.icon{
+    display: none;
+}
 @media only screen and (max-width: 768px){
     .artistasTitle{
         font-size: 36px;
@@ -125,14 +127,6 @@ iframe{
     }
     #artHeader{
         padding: 60px;
-    }
-    .artpageEscura{
-        display: none;
-    }
-    .artpageescuraMbl{
-        padding-left: 10px;
-        grid-gap: 10px;
-        height: 100px;
     }
     .artPicture{
         width: 160px;
@@ -153,6 +147,12 @@ iframe{
         display: none;
     }
     .bottomSection{
+        display: none;
+    }
+    .embed{
+        display: none;
+    }
+    .icon{
         display: none;
     }
 }
