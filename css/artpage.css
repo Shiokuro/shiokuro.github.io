@@ -196,4 +196,7 @@ iframe{
     .upperartIcons{
         display: none;
     }
+    .artIcons{
+        display: flex;
+    }
 }
