@@ -348,6 +348,8 @@ p{
         display: block;
         position: relative;
         background-color: #140918;
+        width: 100%;
+        position: fixed;
     }
     .arrowMobile{
         width: 15vw;
