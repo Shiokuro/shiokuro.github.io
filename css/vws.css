@@ -347,7 +347,7 @@ p{
     .mobile{
         display: block;
         position: relative;
-        background-color: #808080;
+        background-color: #140918;
     }
     .arrowMobile{
         width: 15vw;
@@ -409,7 +409,7 @@ p{
         color: white;
     }
     .menuIcon:hover{
-        background-color: #717171;
+        background-color: #140918;
     }
     .mobileLogo{
         display: none;
