@@ -123,21 +123,19 @@ iframe{
         display: grid;
         padding-left: min(20px, 12vw);
         padding-top: 50px;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
         flex-direction: column;
         position: relative;
-        height: max(18.5vw, 190px);
     }
     .artpageEscura{
         background-color: #0E0E0E;
         display: grid;
         padding-left: min(20px, 12vw);
         padding-top: 50px;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
         flex-direction: column;
         position: relative;
-        height: max(18.5vw, 190px);
-    }
+        }
     .iconColumn{
         float: left;
         padding: 5px;
