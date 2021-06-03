@@ -27,60 +27,20 @@ let track = document.createElement("audio");
 let songList = [
   {
     name: "Confession Of Plagiarist",
-    path: "./songs/song1.mp3"
+    path: "./songs/01.wav"
   },
   {
     name: "Daytime Thief",
-    path: "./songs/song2.mp3"
+    path: "./songs/02.wav"
   },  
   {
     name: "Prostitution ",
-    path: "./songs/song3.mp3"
+    path: "./songs/give me a ride.wav"
   },  
   {
     name: "Compulsive Bomber",
-    path: "./songs/song4.mp3"
-  },  
-  {
-    name: "Adolescent, Burglar",
-    path: "./songs/song5.mp3"
-  },  
-  {
-    name: "Replicant ",
-    path: "./songs/song6.mp3"
-  },  
-  {
-    name: "Flower And Badger Game",
-    path: "./songs/song7.mp3"
-  },  
-  {
-    name: "Middle Age, Plagiarist",
-    path: "./songs/song8.mp3"
-  },  
-  {
-    name: "Plagiarism",
-    path: "./songs/song9.mp3"
-  },  
-  {
-    name: "Thoughtcrime",
-    path: "./songs/song10.mp3"
-  },  
-  {
-    name: "Escape",
-    path: "./songs/song11.mp3"
-  },  
-  {
-    name: "Childhood, In Memories",
-    path: "./songs/song12.mp3"
-  },  
-  {
-    name: "Night Journey",
-    path: "./songs/song13.mp3"
-  },  
-  {
-    name: "Ghost In A Flower",
-    path: "./songs/song14.mp3"
-  }
+    path: "./songs/white.wav"
+  },
 ];
 
 function loadTrack(indexNo){
