@@ -148,6 +148,7 @@ iframe{
         top: 95px;
         letter-spacing: 5px;
         display: flex;
+        z-index: 5;
     }
     #artHeader{
         padding: 60px;
