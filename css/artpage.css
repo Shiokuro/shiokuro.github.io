@@ -112,10 +112,10 @@ iframe{
     display: none;
 }
 .embed{
-    display: none;
+    display: grid;
 }
 .icon{
-    display: none;
+    display: grid;
 }
 @media only screen and (max-width: 768px){
     .artistasTitle{
@@ -129,7 +129,8 @@ iframe{
         padding: 60px;
     }
     .artPicture{
-        width: 160px;
+        width: 120px;
+        height: 120px;
     }
     h2{
     font-size: 24px;
@@ -144,7 +145,8 @@ iframe{
         height: 100%;
     }
     .upperSection{
-        display: none;
+        display: flex;
+        grid-gap: 15px;
     }
     .bottomSection{
         display: none;
@@ -155,4 +157,5 @@ iframe{
     .icon{
         display: none;
     }
+
 }
