@@ -405,7 +405,8 @@ p{
         padding-left: 16px;
         padding-right: 16px;
         position: relative;
-        float:left;
+        float: left;
+        color: white;
     }
     .menuIcon:hover{
         background-color: #717171;
