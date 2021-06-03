@@ -66,7 +66,6 @@ h2{
 .iconColumn{
     float: left;
     padding: 20px;
-
 }
 .artpageClara{
     background-color: #5B16BF;
@@ -98,6 +97,12 @@ iframe{
     width: min(42vw, 570px);
     height: 120px;
 }
+.nometagfotoArt{
+    display: none;
+}
+.embediconsMbl{
+    display: none;
+}
 @media only screen and (max-width: 768px){
     .artistasTitle{
         font-size: 36px;
@@ -115,9 +120,17 @@ iframe{
         height: 100px;
     }
     .artPicture{
-        width: 130px;
+        width: 160px;
     }
-    .nometagfotoArt{
-        
+    h2{
+    font-size: 24px;
+    letter-spacing: 5px;
+    width: 10px;
+    }
+    .nometagfotoMbl{
+        display: grid;
+    }
+    .embediconsMbl{
+        display: grid;
     }
 }
